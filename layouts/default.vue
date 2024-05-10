@@ -32,7 +32,7 @@
                 <NuxtLink to="/signup" class="btn ml-3 text-2xl border-2 border-primary text-primary hover:bg-primary hover:text-white transition ease-out duration-100">Sign up</NuxtLink>
             </div>
             <header class="p-10">
-                <h2 class="text-6xl font-bold text-gray-700 leading-none tracking-wider">{{ (($route.name==='index'?'Home':$route.name) as string).toUpperCase() }}</h2>
+                <h2 class="text-6xl font-bold text-gray-700 leading-none tracking-wider">{{ ($route.name==='index'?'Home':$route.name)?.toString().toUpperCase()}}</h2>
                 <h3 class="text-2xl font-semibold text-gray-600 tracking-wider pt-5">For Ninjas</h3>
             </header>
             <slot />

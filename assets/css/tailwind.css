@@ -13,9 +13,19 @@ body {
 }
 
 .card {
-    @apply rounded bg-white border-gray-200 shadow-md overflow-hidden relative
+    @apply rounded-xl bg-white border-gray-400 shadow-lg overflow-hidden relative
 }
 
 .badget {
     @apply uppercase font-bold bg-secondary-100 text-secondary-200 p-2 rounded-full absolute top-0 ml-2 mt-2 text-sm
+}
+
+.btn-active {
+    @apply font-semibold bg-[#12b488] text-white px-3 py-2 rounded-md text-sm inline-block;
+  }
+
+.one-line {
+    white-space: nowrap;
+    overflow: hidden; 
+    text-overflow: ellipsis; 
 }
